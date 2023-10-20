@@ -6,8 +6,8 @@
 /// but this approach would work for a basket with arbitrary assets/ratios.
 /// E.g., [SDR](https://www.imf.org/en/About/Factsheets/Sheets/2016/08/01/14/51/Special-Drawing-Right-SDR)
 /// could be implemented this way.
-module fungible_tokens::basket {
-    use fungible_tokens::managed::MANAGED;
+module contract::basket {
+    use contract::managed::MANAGED;
     use sui::coin::{Self, Coin};
     use sui::balance::{Self, Balance, Supply};
     use sui::object::{Self, UID};

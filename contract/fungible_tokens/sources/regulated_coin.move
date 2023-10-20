@@ -9,7 +9,7 @@
 /// `borrow_mut()` and `zero()`.
 ///
 /// Each of the methods of this module requires a Witness struct to be sent.
-module rc::regulated_coin {
+module contract::regulated_coin {
     use sui::balance::{Self, Balance};
     use sui::tx_context::TxContext;
     use sui::object::{Self, UID};
@@ -89,8 +89,8 @@ module rc::regulated_coin {
 /// - is managed account creation (only admins can create a new balance)
 /// - has a denylist for addresses managed by the coin admins
 /// - has restricted transfers which can not be taken by anyone except the recipient
-module abc::abc {
-    use rc::regulated_coin::{Self as rcoin, RegulatedCoin as RCoin};
+module contract::abc {
+    use contract::regulated_coin::{Self as rcoin, RegulatedCoin as RCoin};
     use sui::tx_context::{Self, TxContext};
     use sui::balance::{Self, Supply, Balance};
     use sui::object::{Self, UID};

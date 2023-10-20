@@ -9,7 +9,7 @@
 /// of a Coin so that additional whitelisted parties (bearers of the `MintCap`)
 /// can mint new Coins up to a pre-defined per epoch limit. This can be used e.g.
 /// to create a faucet.
-module fungible_tokens::treasury_lock {
+module contract::treasury_lock {
     use sui::object::{Self, UID, ID};
     use sui::coin::{Self, TreasuryCap};
     use sui::balance::{Balance};

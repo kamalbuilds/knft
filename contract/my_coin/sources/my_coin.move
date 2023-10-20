@@ -1,4 +1,4 @@
-module coin_sample::mycoin {
+module contract::mycoin {
     use std::option;
     use sui::coin::{Self, Coin, TreasuryCap};
     use sui::transfer;
