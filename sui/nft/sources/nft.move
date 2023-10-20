@@ -1,4 +1,4 @@
-module nft::KNFT {
+module nft::nft {
     use sui::url::{Self, Url};
     use std::string;
     use sui::object::{Self, ID, UID};
